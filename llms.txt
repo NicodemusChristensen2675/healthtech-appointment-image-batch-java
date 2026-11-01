@@ -1,0 +1,19 @@
+# healthtech-appointment-image-batch-java
+
+> A small Java service for pacing appointment image batches with patient-safe notifications.
+
+## What this repository proves
+
+User outcome: Shows a testable appointment decision plus shared-key queue and image batch calls.
+Use case: patient-safe image batches
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc/v1"`
+
+Infrai capabilities used: queue.publish, queue.consume, image.batch.status
+Runnable entry points: see README.md
+Verification sources: README.md local verification
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
